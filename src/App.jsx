@@ -8,7 +8,7 @@ import OurServices from "./components/OurServices";
 
 function App() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full">
       <Navbar />
       <HeroSection />
       <Features/>
