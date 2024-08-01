@@ -10,7 +10,7 @@ export default function Navbar() {
     "Contact",
   ];
   return (
-    <nav className="flex items-center justify-between bg-white shadow-[#00000026_0px_0px_10px_0px] text-neutral-500 sticky top-0 mt-0 mx-0 py-6 px-52">
+    <nav className="z-50 flex items-center justify-between bg-white shadow-[#00000026_0px_0px_10px_0px] text-neutral-500 sticky top-0 mt-0 mx-0 py-6 px-52">
       <div className="container mx-auto">
         <h1 className="uppercase font-bold text-2xl font-Raleway">
           React landing page
@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
       <div className="flex gap-20 justify-between w-full">
         {Links.map((link) => (
-          <Anchor key="" href={`#${link.toLowerCase().replace(/\s/g, "-")}`}>
+          <Anchor key={link} href={`#${link.toLowerCase().replace(/\s/g, "-")}`}>
             {link}
           </Anchor>
         ))}

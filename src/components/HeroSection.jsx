@@ -25,8 +25,9 @@ export default function HeroSection() {
             onClick={handlePopup}
           />
           {show && (
-            <div className="absolute bg-white p-10 top-1/3 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
-              <p className="text-neutral-700">This is a popup</p>
+            <div className="absolute bg-white p-10 rounded-xl top-1/3 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
+              <button className="text-blue-700 text-xl font-bold self-end" onClick={handlePopup}>X</button>
+              <img src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-happy-face-banner-with-smile-expression-vector-illustration-png-image_317653.jpg" alt="happy" className="w-56 h-56" />
             </div>
           )}
         </div>
